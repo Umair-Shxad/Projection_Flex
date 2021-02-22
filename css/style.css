@@ -1,0 +1,421 @@
+*{
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 15px;
+}
+
+.fixed-width{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5% 5%;
+}
+
+.flex-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.close, .fa-navicon{
+    display: none;
+}
+
+/* Header CSS */
+
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover,
+a:focus{
+    color: #dfdfdf;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 1.2rem;
+    font-size: 1.1rem;
+}
+
+header hr{
+    height: 1.5px;
+    margin-top: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+}
+
+/* Banner CSS */
+
+.banner::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: rgba(75, 75, 93, 0.85);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+
+.banner .fixed-width{
+    position: relative;
+    top: 25%;
+    z-index: 2;
+}
+
+.banner h1{
+    font-size: 3.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.b-box{
+    width: 33%;
+    padding: 1rem 0;
+}
+
+.b-box .fa{
+    color: #6cc091;
+    font-size: 1.8rem;
+}
+
+.b-box h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: .4rem 0 .2rem;
+}
+
+.b-box p{
+    color: #ffffff80;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.b-hr{
+    width: 1px;
+    background-color: #9a9a9a;
+    border: 0;
+}
+
+.banner button{
+    width: 10.7rem;
+    height: 2.5rem;
+    background: transparent;
+    border: .2rem solid #6cc091;
+    border-radius: 2rem;
+    font-family: inherit;
+    font-size: .8rem;
+    font-weight: 300;
+    letter-spacing: .1rem;
+    color: #6cc091;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+.banner button:hover,
+.banner button:focus{
+    color: #fff;
+    background: #6cc091;
+}
+
+/* Two Box Section CSS */
+
+.two-box{
+    width: 45%;
+    text-align: center;
+}
+
+.two-box img{
+    border-radius: 100%;
+    margin-bottom: .5rem;
+}
+
+.two-box h1{
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #555555;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.two-box p{
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #6cc091;
+    margin-bottom: 1.5rem;
+}
+
+.two-box button{
+    width: 190px;
+    height: 40px;
+    font-size: .9rem;
+    font-weight: 400;
+    color: #8dcca9;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 2px solid #8dcca9;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.two-box button:hover,
+.two-box button:focus{
+    color: #fff;
+    background: #8dcca9;
+}
+
+/* Footer CSS */
+
+footer{
+    text-align: center;
+    background: #6cc091;
+    color: #fff;
+}
+
+footer h1{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+
+.field{
+    width: 48%;
+    text-align: left;
+}
+
+.message{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.field input{
+    width: 100%;
+    height: 2.8rem;
+    font-family: inherit;
+    color: #fff;
+    margin: .5rem 0;
+    padding: .8rem;
+    background: transparent;
+    border: 2px solid #8dcca9;
+    border-radius: 6px;
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    font-family: inherit;
+    color: #fff;
+}
+
+.message textarea{
+    width: 100%;
+    resize: none;
+    margin-top: .5rem;
+    color: #fff;
+    padding: .8rem;
+    background: transparent;
+    border: 2px solid #8dcca9;
+    border-radius: 5px;
+    outline: none;
+}
+
+.field input:focus,
+.message textarea:focus{
+    box-shadow: 0px 0px 10px 0px #8dcca9;
+}
+
+.send-btn{
+    width: 12rem;
+    height: 2.8rem;
+    font-family: inherit;
+    color: #fff;
+    letter-spacing: 1px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 2rem;
+    margin: 1.5rem auto;
+    outline: none;
+}
+
+.send-btn:hover,
+.send-btn:focus{
+    color: #000;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+/* Media Query */
+
+@media (max-width:991px){
+    .two-box{
+        width: 100%;
+    }
+    .tb-margin{
+        margin-top: 3rem;
+    }
+
+    .field{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .fa-close, .fa-navicon{
+        display: block;
+        font-size: 1.3rem;
+    }
+    .banner{
+        background-attachment: scroll;
+    }
+    .banner .fixed-width{
+        top: 15%;
+    }
+    .banner h1{
+        font-size: 2.9rem;
+        margin-bottom: 2rem;
+    }
+    .b-box{
+        width: 100%;
+        padding: 0;
+    }
+    .b-center{
+        margin: 1.2rem 0;
+    }
+    .b-box .fa{
+        font-size: 1.8rem;
+    }
+    .b-hr{
+        display: none;
+    }
+    .banner button{
+        margin-top: 2rem;
+    }
+
+    .two-box{
+        width: 100%;
+    }
+
+    /* Menu Set */
+
+    header{
+        z-index: 3;
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 50%;
+        height: 100vh;
+        background: #8dcca9;
+        display: none;
+    }
+    .menu li{
+        padding: .8rem 0;
+        border-bottom: 1px solid #fff;
+    }
+    .menu li:first-child{
+        border-bottom: 0;
+    }
+    .close{
+        position: relative;
+        top: 0rem;
+        right: 0;
+        left: 90%;
+        display: inline-block;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:475px){
+    html{
+        font-size: 13.5px;
+    }
+    .send-btn, .banner button, .two-box button{
+        width: 100%;
+    }
+}
+
+/* Loading CSS */
+
+#fp{
+    display: none;
+}
+
+.main-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 100%;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 88;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rot{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 100%;
+    border-top: 3px solid #6cc091;
+    animation: rot 2.5s linear infinite;
+}
+
+.main-div h1{
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+}
+
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

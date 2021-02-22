@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projection</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  
+  <body>
+
+  <!-- Extra Work -->
+    <div class="main-div" id="abc">
+      <div class="rot"></div>
+      <h1>Loading...</h1>
+    </div>
+<div id="fp">
+  <!-- Header -->
+    <header>
+      <div class="fixed-width">
+        <nav>
+          <a href="#" class="logo"><strong>Projection</strong> by TEMPLATED</a>
+          <ul class="menu">
+            <li><a href="#" class="close">&times;</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Generic</a></li>
+            <li><a href="#">Elements</a></li>
+          </ul>
+          <a href="#" class="fa fa-navicon"></a>
+        </nav>
+        <hr class="header-hr">
+      </div>
+    </header>
+
+  <!-- Banner -->
+    <section class="banner">
+      <div class="fixed-width">
+        <h1>Welcome to Projection</h1>
+
+        <div class="flex-box">
+          <section class="b-box">
+            <span class="fa fa-car"></span>
+            <h3>Aliquam</h3>
+            <p>uspendisse amet ullamco</p>
+          </section>
+          <hr class="b-hr">
+          <section class="b-box b-center">
+            <span class="fa fa-camera"></span>
+            <h3>Elementum</h3>
+            <p>Class aptent taciti ad litora</p>
+          </section>
+          <hr class="b-hr">
+          <section class="b-box">
+            <span class="fa fa-bug"></span>
+            <h3>Ultrices</h3>
+            <p>Nulla vitae mauris non felis</p>
+          </section>
+        </div>
+
+        <button>GET STARTED</button>
+      </div>
+    </section>
+    
+  
+  <!-- Two Box Section -->
+
+    <div class="fixed-width">
+      <div class="flex-box">
+        <section class="two-box">
+          <img src="img/pic01.jpg" alt="Mobile">
+          <h1>Lorem ipsum <br> dolor amet nullam</h1>
+          <p>Morbi in sem quis dui placerat ornare. Pellentesquenisi <br> euismod in, pharetra a, ultricies in diam sed arcu. Cras <br> consequat egestas augue vulputate.</p>
+          <button>LEARN MORE</button>
+        </section>
+        <section class="two-box tb-margin">
+          <img src="img/pic02.jpg" alt="Camera">
+          <h1>Sed feugiat <br> tempus adipicsing</h1>
+          <p>Pellentesque fermentum dolor. Aliquam quam lectus <br> facilisis auctor, ultrices ut, elementum vulputate, nunc <br> blandit ellenste egestagus commodo.</p>
+          <button>LEARN MORE</button>
+        </section>
+      </div>
+    </div>
+
+  <!-- Footer -->
+    <footer>
+      <div class="fixed-width">
+        <h1>Get in touch</h1>
+
+        <form action="" method="POST">
+          <div class="flex-box">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" placeholder="Name" name="" id="">
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" placeholder="Email" name="" id="">
+            </div>
+
+            <div class="field message">
+              <label for="message">Message</label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <input type="submit" name="" id="" value="SEND MESSAGE" class="send-btn">
+          </div>
+        </form>
+
+        <p>&copy; Untitled. Design: <a href="#">TEMPLATED</a>. Images: Unsplash.</p>
+      </div>
+    </footer>
+  </div>
+    <!-- Jquery CDN -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script>
+      $(function(){
+
+        // Menu Toggle
+        $(".fa-navicon").click(function(){
+          $(".menu").slideToggle();
+        });
+
+        $(".close").click(function(){
+          $(".menu").fadeOut();
+        });
+
+      
+        // Loading...
+        setTimeout(function(){
+          $(".main-div").slideUp(800);
+        }, 2000)
+
+        setTimeout(function(){
+          $("#fp").fadeIn(800);
+        }, 2100)
+
+       });
+    </script>
+
+
+  </body>
+</html>
